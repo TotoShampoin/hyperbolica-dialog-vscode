@@ -1,0 +1,25 @@
+{
+    "name": "hyperbolica-dialog",
+    "displayName": "Hyperbolica Dialog System",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hyperbolicadialog",
+            "aliases": ["Hyperbolica", "hyperbolicadialog"],
+            "extensions": [".txt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hyperbolicadialog",
+            "scopeName": "source.hyperbolicad",
+            "path": "./syntaxes/hyperbolicadialog.tmLanguage.json"
+        }]
+    }
+}

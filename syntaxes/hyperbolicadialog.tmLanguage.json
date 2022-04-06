@@ -1,0 +1,50 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Hyperbolica",
+	"patterns": [
+		{"include": "#event_start"},
+		{"include": "#event_call"},
+		{"include": "#condition"},
+		{"include": "#animation"},
+		{"include": "#block"},
+		{"include": "#newline"},
+		{"include": "#comment"}
+	],
+	"repository": {
+		"event_start": {
+			"name": "entity.name.type.hyperbolicadialog",
+			"begin": "#",
+			"end": "\\s"
+		},
+		"event_call": {
+			"name": "entity.name.function.hyperbolicadialog",
+			"begin": "\\$",
+			"end": "\\s"
+		},
+		"condition": {
+			"name": "keyword.control.hyperbolicadialog",
+			"begin": "\\@",
+			"end": "\\s"
+		},
+		"animation": {
+			"name": "variable.language.hyperbolicadialog",
+			"begin": "\\[",
+			"end": "\\]"
+		},
+		"block": {
+			"name": "string.quoted.other.hyperbolicadialog",
+			"begin": "\\|",
+			"end": "\\|"
+		},
+		"newline": {
+			"name": "constant.character.escape.hyperbolicadialog",
+			"match": "\\\\n"
+		},
+		"comment": {
+			"name": "comment.line.double-slash.hyperbolicadialog",
+			"begin": "//",
+			"end": "\n"
+		}
+	},
+	"scopeName": "source.hyperbolicad"
+}
