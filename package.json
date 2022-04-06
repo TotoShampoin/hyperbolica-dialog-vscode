@@ -26,5 +26,6 @@
         "type": "git",
         "url": "https://github.com/TotoShampoin/hyperbolica-dialog-vscode"
     },
+    "publisher": "totoshampoin",
     "license": "MIT"
 }
